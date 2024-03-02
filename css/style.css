@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+ 
+    --green:green;
+    --black:#130f40;
+    --light: #666;
+    --box-shadow:0.1rem 1rem rgba(0,0,0.1);
+    --border:2rem solid rgba(0,0,0.1);
+    --outline:.1rem solid rgba(0,0,0.1);
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    scroll-padding-top: 7rem;
+    background: #aeadad;
+}
+
+.header{
+    border: 0px solid;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: white;
+
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.header .logo i{
+    color: var(--black);
+    padding-right: 20px;
+}
+
+#logo-name{
+    color: orange;
+}
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: orange;
+}
+
+.header .icon div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: 0.3rem;
+    text-align: center;
+
+}
+
+.header .icon div:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .navbar.active{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 10px;
+    
+}
+
+.btn:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+.header .login-form{
+    width: 30rem;
+    position: absolute;
+    top: 110%;
+    right: -110rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: white;
+    text-align: center;
+}
+
+
+.header .login-form.active{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login-form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    color: black;
+}
+
+.header .login-form p a{
+    text-decoration: underline;
+}
+
+.header .login-form p a:hover{
+    color: orange;
+}
+
+
+
+
+/*css code for home section*/
+section{
+    padding: 2rem 9%;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    background: url(../image/maxresdefault.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 14rem;
+    padding-bottom:7rem;
+
+}
+
+
+.home .content{
+    text-align: center;
+    width: 80rem;
+    background: #666;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px white, -5px -5px 10px white;
+}
+
+.home .content h3{
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.home .content h3 span{
+    color: orange;
+}
+
+.home .content p{
+    color:white;
+    font-size: 1.4rem;
+    padding-bottom: 3rem;
+
+}
+
+.btn{
+    background: white;
+    color: black;
+    border: 0px;
+    font-size: 1.4rem;
+
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: #130f40;
+}
+
+.heading span{
+    background: var(--black);
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+
+
+/* Features code*/
+
+.features{
+    background-color: white;
+}
+
+#wash{
+    font-size: 3rem;
+    padding: 3rem 0; 
+}
+
+#wash-month{
+    font-size: 3rem;
+    padding: 3rem 0;
+    padding-top: 100px;
+}
+
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.features .box-container .box{
+    padding: 3rem 5rem;
+    background-color: white;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    padding-bottom: 40px;
+}
+
+.features .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px orange;
+}
+
+.features .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+    width: 220px;
+
+}
+
+.features .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: #666 ;
+}
+
+.features .box-container .box p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    padding-bottom: 30px;
+}
+
+
+.features .box-container .box p ul li{
+    align-items: left;
+    font-size: 2.5rem;
+}
+
+.features .box-container .box .btn{
+    background-color: #666;
+    color: white;
+}
+
+.features .box-container .box .btn:hover{
+    background-color: orange;
+    color: black;
+}
+
+
+
+/* Code for Reviews Section*/
+
+
+.review{
+    border-color: #aeadad;
+}
+.review .review-slide{
+    padding: 1rem;
+}
+
+.review .review-slide .box{
+    padding: 3rem 2rem;
+    background-color: white;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    padding-bottom: 40px;
+}
+
+.review .review-slide .box p{
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.review .review-slide .box h3{
+    padding-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.review .review-slide .box .stars i{
+    font-size: 1.7rem;
+    color: orange;
+}
+
+
+
+
+/*About us section styling*/
+
+.about{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.about-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-details .about-image{
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.about-image img{
+    max-width: 80%;
+    height: 400px;
+    margin-right: 100px;
+
+    
+}
+
+.about-content{
+    max-width: 50%;
+    margin-top: 50px;
+}
+
+.about-content h2{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+
+
+/*footer style*/
+
+.footer{
+    background-color:#aeadad ;
+}
+
+.footer .box-container{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: #130f40;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i{
+    color: var(--black);
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: black;
+}
+
+.footer .box-container .box .links i{
+    color: orange;
+    padding-right: 0.8rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color: #130f40;
+    margin-left: 0.2rem;
+    background: white;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover{
+    background-color: orange;
+    color: #130f40;
+}
+
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #130f40;
+    font-weight:400;
+    border-top: var(--border);
+    border-width: 1px;
+}
+
+.footer .credit span{
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem 9%;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px){
+    
+    #menu-btn{
+        display: inline-block;
+        
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%;
+        right: -110rem;
+        width: 30rem;
+        border-radius: 0.5rem;
+        background: #fff;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .features .box-container .box img{
+        width: 200px;
+    }
+    
+    
+    .about-content p{
+        padding: 0px;
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .about-details{
+        flex-direction: column; 
+    }
+
+    .about-image{
+        width: 300px;
+        margin-left: 70px;
+    }
+    .about-content{
+        max-width: 100%;
+        text-align: justify;
+    }
+    
+}
+
+
+
